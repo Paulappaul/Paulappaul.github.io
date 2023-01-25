@@ -1,0 +1,112 @@
+/* Add CSS styling for banner and tab bar here */
+.banner {
+    background-color: #D7CEB2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  .banner a {
+    color: white;
+    text-decoration: none;
+  }
+  .banner a:hover {
+    color: grey;
+  }
+  .tab-bar {
+    background-color: #D7CEB2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  .tab-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .tab-bar a:hover {
+    background-color: #D7CEB2;
+  }
+  /* Add CSS styling for body here */
+  .body {
+    margin: 0 20px;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+
+  /* Add CSS styling for sections*/
+  .about-me{
+    margin: 20px 0;
+  }
+  .projects {
+    margin: 20px 0;
+  }
+  .resume {
+    margin: 20px 0;
+  }
+  .contact {
+    margin: 20px 0;
+  }
+
+.projects-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-grid .row{
+    display: flex;
+    width:100%;
+}
+.projects-grid .row a img{
+    width: 20%;
+    margin: 5px;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.projects-grid a img {
+  width: 600px;
+  height: 900px;
+  object-fit: cover;
+}
+
+.about-me-img img {
+  width: 600px;
+  height: 800px;
+  display: inline-block;
+
+  border: solid 4px;
+}
+
+.image-lefty{
+  float: left;
+  max-width: 350px; /* Adjust as needed */
+  height: 300px;
+}
+
+.image-right {
+  float: right;
+
+    border-radius: 50%;
+    border: solid 6px;
+
+    
+  margin: 0 0 10px 10px;
+  max-width: 350px; /* Adjust as needed */
+  height: 300px;
+}
+
+
+.text-wrap {
+  clear: both;
+}
