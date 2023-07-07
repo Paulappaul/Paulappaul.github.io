@@ -1,63 +1,172 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Paul Wells</title>
-    <link rel="stylesheet" href="StyleSheet.css">
-    <style>
-    </style>
-  </head>
-  <body>
-    <div class="banner">
-      <a href="index.html">Paul Wells</a>
-  </div>  
 
-    <div class="tab-bar">
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume and Professional Experience</a>
-      <a href="contact.html">Contact</a>
+<style>
+  .image-text-container {
+    margin-bottom: 20px;
+  }
+
+  .image-column {
+    flex: 1;
+    width: 33.33%;
+    display: block;
+    align-items: center;
+  }
+
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .text-column {
+    flex: 2;
+    margin-left: 20px;
+  }
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .video-row {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .video-row iframe {
+    margin: 0 10px;
+  }
+
+  .image-social-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .image-container img {
+
+    margin-bottom: 10px;
+  }
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+
+  .social-links a {
+    margin-right: 10px;
+  }
+
+  .text-container {
+    margin-left: 20px;
+    margin-bottom: 20px; /* Add margin-bottom to create space between text and videos */
+  }
+
+  /* New styles */
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .title-container::after {
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid black;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+</style>
+
+<head>
+  <title>Paul Wells</title>
+  <link rel="stylesheet" href="StyleSheet.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="tab-bar">
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume and Professional Experience</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="body">
+    <div class="image-social-container">
+      <div class="image-container">
+        <img src="images/simulcraSound.png" class="image-lefty" width="400" height="298">
+
+        <div class="social-links">
+          <a href="https://github.com/Paulappaul">
+            <img src="images/Github.png" alt="Github" width="75" height="50">
+          </a>
+          <a href="https://www.linkedin.com/in/paul-wells-7b19a4159/">
+            <img src="images/linkin.jpg" alt="LinkedIn" width="70" height="50">
+          </a>
+          <a href="https://www.imdb.com/name/nm10273224/?ref_=tt_rvi_nm_i_6">
+            <img src="images/imdb.png" alt="IMDb" width="70" height="50">
+          </a>
+          <a href="https://www.youtube.com/@paulwells411/">
+            <img src="images/youtube.png" alt="YouTube" width="70" height="50">
+          </a>
+        </div>
+      </div>
+      <div class="text-container">
+        <div class="title-container">
+          <div class="title">Paul Wells - Simulacra Sound - Belmont Sound and Production</div>
+        </div>
+        <p>Welcome to my website. Please feel free to explore the navigation tabs above to gain insights into my background as an accomplished audio engineer and software developer. Within these sections, you'll discover comprehensive information about my diverse range of projects. </p>
+
+        <p>As an audio engineer, I have a proven track record of creating exceptional experiences. Below are a few of my notable projects, including an original game designed in Unreal 5 crafted with integrated sound design using the Wwise middleware. You’ll also find my Production Sound Mixer reel, which showcases my involvement in various commercial and narrative productions within the film industry. </p>
+          
+          
+        <p> In the Project tab you'll find an innovative digital audio workstation (DAW) that emulates the renowned Tascam 388 reel-to-reel tape machine using convolution technology. This DAW allows users to record up to eight tracks simultaneously while incorporating EQ, reverb, and saturation effects. It offers a unique tape emulation experience for audio enthusiasts and professionals alike. </p>
+          
+          <p> You’ll also find a Wolfenstein/Doom-inspired game engine that leverages the Wwise middleware to create captivating and immersive soundscapes. This engine pushes the boundaries of interactive audio design, providing players with an unparalleled auditory experience within the gaming world. As a bonus, the videos below include a lecture series documenting my experience in creating this game engine. </p>
+          
+            <p>  To supplement these projects, you will find additional captivating videos and content on my website. Additionally, I invite you to visit the contact tab, where you can easily reach out to me via email or text for any inquiries or collaborations. </p>
+          
+          
+              <p>  Thank you for visiting my website, and I eagerly anticipate the opportunity to connect with you soon!
+          </p>
+      </div>
     </div>
-    <div class="body">
-      <div id="about" class="about-me">
-        
-      </div>
-      <div id="projects" class="projects">
 
-      </div>
-      <div id="resume" class="resume">
-       
-      </div>
-      <div id="contact" class="contact">
- 
-      </div>
-
-      <img src="images/belmontlogo.jpg" class="image-lefty">
-      <p>Welcome to my personal page! Feel free to check out the tabs above to learn more about me and the various projects I've worked on as an audio enginner and software developer. If you need to reach me directly, feel free to check out the contact tab and drop me a line via email or text.</p>
-        
-      <p>Below are three videos which demonstrate my diverse set of skills. The first is an original game designed in Unreal 5 with original sound design integration using Wwise. The second is my Production Sound Mixer reel which documents a number of commerical and narrative productions I've been apart of in the film industry. The third is a generative audio program designed in MaxMsp which uses Markov Chains and Java to access data real time and control a collection of sound sources. Thanks for coming and I look forward to hearing from you!</p>
-      
-
-      <p>
+    <div class="video-container">
+      <div class="video-row">
         <iframe width="500" height="281" src="https://www.youtube.com/embed/6p0BNn5oZgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe src="https://player.vimeo.com/video/353424032?h=3b2bcfe4ba" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/353424032?h=3b2bcfe4ba" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         <iframe width="500" height="281" src="https://www.youtube.com/embed/xC15493T1mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-          <p><a href="https://github.com/Paulappaul">Github</a>&nbsp;
-          <a href="https://www.linkedin.com/in/paul-wells-7b19a4159/">Linkedin</a>
-          <a href="https://www.imdb.com/name/nm10273224/?ref_=tt_rvi_nm_i_6">IMDb</a>
-          <a href="https://www.youtube.com/@paulwells411/">YouTube</a>
-        </p>
-
-      </p>
-
-
-
-
-
-
-      
+      </div>
+      <div class="video-row">
+        <iframe width="500" height="281" src="https://www.youtube.com/embed/w7GGrG1YmbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="500" height="281" src="https://www.youtube.com/embed/XSLaqhUWOmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="500" height="281" src="https://www.youtube.com/embed/dTGMLbd7ycE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
