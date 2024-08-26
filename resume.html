@@ -4,12 +4,39 @@
     <title>Paul Wells</title>
     <link rel="stylesheet" href="StyleSheet.css">
     <style>
+      .contact-info {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      .section-title {
+        font-weight: bold;
+        margin-top: 40px;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      .content {
+        margin: 20px 0;
+        font-size: 16px;
+      }
+      .project, .job {
+        margin-bottom: 20px;
+      }
+      .job-title {
+        font-weight: bold;
+      }
+      .date-location {
+        font-style: italic;
+      }
+      .project-title {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <div class="banner">
       <a href="index.html">Paul Wells</a>
-  </div>  
+    </div>  
     <div class="tab-bar">
         <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
@@ -17,21 +44,109 @@
         <a href="contact.html">Contact</a>
     </div>
     <div class="body">
-      <div id="about" class="about-me">
- 
+      <div class="contact-info">
+        <p>Los Angeles, CA 90042 | 503 867 6298 | <a href="mailto:Paul.Wells.Production@gmail.com">Paul.Wells.Production@gmail.com</a></p>
       </div>
-      <div id="projects" class="projects">
-       
-      </div>
+
       <div id="resume" class="resume">
-       
-      </div>
-      <div id="contact" class="contact">
-       
-      </div>
+        <div class="section-title">Professional Summary</div>
+        <div class="content">
+          Versatile software developer with a strong focus on C++, Java, and Android application development. Possesses a solid foundation in multimedia design and network implementation, with a knack for optimizing performance in demanding environments. Effective collaborator with exceptional communication skills and the ability to thrive under pressure.
+        </div>
 
-      <img src="images/Paul Wells Resume - Copy.png" alt="">
+        <div class="section-title">Skills</div>
+        <div class="content">
+          Proficient in C++ software development, specializing in low-latency applications and DSP solutions, employing modern C++ paradigms for efficient code design, including multithreading and object-oriented programming techniques for responsive software applications.
+          <br><br>
+          Applied experience with audio and graphic libraries such as OpenGL, JUCE, FFMPEG, and Gstreamer / WebRTC for multimedia development with common GUI frameworks such as QT and FLTK.
+          <br><br>
+          Proficient in numerous network protocols facilitating data exchange and connectivity in software applications.
+          <br><br>
+          In-depth understanding of Windows and Linux architectures, along with design strategies for optimizing software performance. Versed with Powershell / Unix shell scripting and CMake.
+        </div>
 
+        <div class="section-title">Work History</div>
+        
+        <div class="job">
+          <div class="job-title">Contract Software Engineer</div>
+          <div class="date-location">April 2023 - February 2024, JungleAudio - Los Angeles, CA</div>
+          <div class="content">
+            Created and maintained proprietary VST software for boutique instrument startup on a contracted schedule in collaboration with foreign developers working on DSP and graphic solutions.
+            <br>Wrote scalable Node.Js server to facilitate communication between React frontend and C++ backend.
+            <br>Ported software to Mac, Windows, Linux, and web-based deployments.
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Staff Software Engineer</div>
+          <div class="date-location">September 2020 - December 2022, SWCA Environmental Consultants - Los Angeles, CA</div>
+          <div class="content">
+            Created and maintained cloud-based database infrastructure using Java, AWS, and SQL, ensuring high availability and performance for the team.
+            <br>Developed original applications for Android devices to support field engineers, enhancing their productivity and data collection processes.
+            <br>Provided technical support to employees remotely, resolving hardware and software issues efficiently.
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Senior Audio Engineer</div>
+          <div class="date-location">August 2018 to June 2023, Belmont Sound and Production - Los Angeles, CA</div>
+          <div class="content">
+            Collaborated with cinematographers, directors, and producers to deliver pristine and cinematic audio content for high profile clients such as Sony, Fox, HBO, DIOR, and PETA.
+            <br>Managed wireless frequencies using VHF, UHF, and 2.4 GHz technologies to ensure optimal audio performance in diverse RF environments.
+            <br>Managed and deployed multicast and unicast streams for both public consumption and set review adhering to AES67 protocol.
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Senior Audio Engineer</div>
+          <div class="date-location">November 2018 - September 2021, Garden Of Sound - Los Angeles, CA</div>
+          <div class="content">
+            Set up, maintained, and operated audio equipment to the highest quality standards, consistently meeting producer and client expectations.
+            <br>Utilized ProTools, ISDN, and SourceConnect to mix and edit tracks both in-studio and remotely.
+            <br>Recorded ADR sessions and synced sound to video, provided clear and concise direction to talent.
+          </div>
+        </div>
+
+        <div class="section-title">Projects</div>
+        
+        <div class="project">
+          <div class="project-title">Cosmo388</div>
+          <div class="content">
+            C++, FLTK, Portaudio
+            <br>A fully functional DAW designed to replicate the Tascam 388 reel-to-reel tape machine, providing 8 channels for recording and playback through convolution techniques. Demonstrates knowledge of filter design, convolution, and multithreading programming.
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">AuralEngine</div>
+          <div class="content">
+            OpenGL, Wwise SDK
+            <br>An original game engine built with OpenGL and Wwise, inspired by the legendary worlds of Wolfenstein and Doom. Demonstrates expertise in 3D Math and Spatial Audio.
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">PhotoEditor</div>
+          <div class="content">
+            C++, FLTK
+            <br>An application that empowers users to resize, crop, and manipulate the color of images in real time with an old-school GUI interface designed with FLTK.
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Restaurant POS system</div>
+          <div class="content">
+            C++, QT
+            <br>Designed to streamline restaurant operations, this application allows staff to document, organize, and print orders from customers. Demonstrates proficiency in OOP, Polymorphism, and UI development.
+          </div>
+        </div>
+
+        <div class="section-title">Education</div>
+        <div class="content">
+          Bachelor of Computer Science, September 2018
+          <br>Portland State University - Portland, Oregon
+        </div>
+      </div>
     </div>
   </body>
 </html>
